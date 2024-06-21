@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        font:bold 54px/"PingFangSC-Regular","黑体",sans-serif;
+        text-align:left;
+    }
+    .yxbox{
+        width:1366px;
+        height: 738px;
+        overflow: hidden;
+        background-color: #F7F7F7;
+    }
+    .yxboxs{
+        width:1366px;
+        height: 738px;
+        margin-top:40px;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+   .yxbox1{
+        float:left;
+        width: 264px;
+        height: 270px;
+        margin-top: 126px;
+        margin-left:107px;
+        margin-bottom:32px;
+        overflow: hidden;
+        background-color: #FFFFFF;
+        box-shadow: none;
+    }
+    .yxbox1-img{
+        
+        overflow: hidden;
+        width: 264px;
+        height: 184px;
+    }
+    .yxbox1:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); 
+        transition: box-shadow 0.3s ease; 
+    }
+    
+    .yxbox1:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+       
+        transition: transform 0.3s ease; 
+        
+    }
+    .yxbox12{
+        
+        float:left;
+        width: 264px;
+        position: relative;
+        height: 270px;
+        margin-top: 126px;
+        margin-left:32px;
+        margin-bottom:32px;
+        overflow: hidden;
+        box-shadow: none;
+        background-color: #FFFFFF;
+    }
+    .yxbox12:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox12-img{
+        
+        overflow: hidden;
+        width: 264px;
+        height: 180px;
+        
+        background-color: #ffffff;
+    }
+    .yxbox12:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    
+    .yxbox13{
+        display:inline-block;
+        float:left;
+        width: 264px;
+        position: relative;
+        height: 270px;
+        margin-bottom:40px;
+        margin-left:107px;
+        overflow: hidden;
+        box-shadow: none;
+        background-color: #FFFFFF;
+    }
+    .yxbox13:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox13-img{
+        
+        overflow: hidden;
+        width: 264px;
+        height: 180px;
+        
+        background-color: #ffffff;
+    }
+    .yxbox13:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    .yxbox14{
+        display:inline-block;
+        float:left;
+        width: 264px;
+        position: relative;
+        height: 270px;
+        margin-bottom:40px;
+        margin-left:32px;
+        overflow: hidden;
+        box-shadow: none;
+        background-color: #FFFFFF;
+    }
+    .yxbox14:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox14-img{
+        
+        overflow: hidden;
+        width: 264px;
+        height: 180px;
+        background-color: #ffffff;
+    }
+    .yxbox14:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    .yxbox2 {
+            display:inline-block;
+            float: left;
+            width:560px;
+            height:270px;
+            margin-left: 107px;
+            margin-top:126px;
+            overflow: hidden;
+            
+        }
+
+    .yxbox2 ul {
+            list-style: none;
+    }
+
+    .yxbox2 ul li {
+            float: left;
+            width: 560px;
+            height: 270px;
+            /* 子绝父相 */
+            position: relative;
+    }
+
+    .yxbox2 ul li img {
+            /*width: 560px;
+            height: 270px;*/
+    }
+
+    .yxbox2 ul li .info {
+            position: absolute;
+            width: 560px;
+            height: 103px;
+            line-height: 103px;
+            color: white;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .5);
+            /* 透明度设置为0，不是背景的透明度，而是整体的透明度 */
+            opacity: 1;
+            font-size: 14px;
+            padding-left:14px;
+            text-align: left;
+                
+    }
+    .yxbox2 ul li:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    .yxbox21{
+        
+        float:left;
+        width: 264px;
+        position: relative;
+        height: 270px;
+        margin-top: 126px;
+        margin-left:32px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+        background-color: #FFFFFF;
+    }
+    .yxbox21:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox21-img{
+        
+        overflow: hidden;
+        width: 264px;
+        height: 180px;
+        
+        background-color: #ffffff;
+    }
+    .yxbox21:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    
+    .yxbox22{
+        
+        float:right;
+        width: 264px;
+        position: relative;
+        height: 270px;
+        margin-top: 126px;
+        margin-right:107px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+        background-color: #FFFFFF;
+    }
+    .yxbox22:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox22-img{
+        
+        overflow: hidden;
+        width: 264px;
+        height: 180px;
+        
+        background-color: #ffffff;
+    }
+    .yxbox22:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    .yxbox23{
+        
+        float:left;
+        width: 264px;
+        position: relative;
+        height: 270px;
+        margin-top: 32px;
+        margin-left:107px;
+        margin-bottom:40px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+        background-color: #FFFFFF;
+    }
+    .yxbox23:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox23-img{
+        
+        overflow: hidden;
+        width: 264px;
+        height: 180px;
+        
+        background-color: #ffffff;
+    }
+    .yxbox23:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    .yxbox24{
+        
+        float:left;
+        width: 264px;
+        position: relative;
+        height: 270px;
+        margin-top: 32px;
+        margin-left:32px;
+        margin-bottom:40px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+    .yxbox24:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox24-img{
+        
+        overflow: hidden;
+        width: 264px;
+        height: 180px;
+        
+        background-color: #ffffff;
+    }
+    .yxbox24:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    
+    .yxbox25{
+        
+        float:left;
+        width: 264px;
+        position: relative;
+        height: 270px;
+        margin-top: 32px;
+        margin-left:32px;
+        margin-bottom:40px;
+        box-shadow: none;
+        background: linear-gradient(to bottom, #34E3BC, #15AF7A);
+        
+    }
+    .yxbox25:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox25-img{
+        margin-left: 108px;
+        margin-top: 28px;
+        transition: top 1s linear 0s;
+        top:0px;
+    }
+    .yxbox25:hover img{
+        top: 10px;
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        
+        
+    }
+    .yxbox25-text{
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .info1{
+        position: absolute;
+        height: 40px;
+        width: 55px;
+        margin-bottom: 90px;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .5);
+        /* 透明度设置为0，不是背景的透明度，而是整体的透明度 */
+        opacity: 1;
+        font-size: 14px;
+        word-wrap: break-word; /* 自动换行 */
+        padding-left:14px;
+        text-align: left;
+
+    }
+    .container {
+        display: flex;
+        width:1366px;
+        height: 738px;
+        background-color: #F7F7F7;
+    }
+
+    .column {
+    
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .yxbox31 {
+        float:left;
+        height: 120px;
+        width: 364px;
+        
+        margin-top: 126px;
+        margin-left:30px;
+        float:left;
+        position: relative;
+        overflow: hidden;
+        box-shadow:  0 2px 4px 0 rgba(0,0,0,0.20);
+        background-color: #FFFFFF;
+    }
+    .yxbox31:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox31-img{
+        overflow: hidden;
+        height: 120px;
+        width: 120px;
+        background-color: #ffffff;
+    }
+    .yxbox31:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    .yxbox32 {
+        float:left;
+        height: 120px;
+        width: 364px;
+        
+        margin-left:30px;
+        margin-top:30px; /* 盒子间距 */
+        float:left;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+        background-color: #FFFFFF;
+    }
+    .yxbox32:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox32-img{
+        overflow: hidden;
+        height: 120px;
+        width: 120px;
+        background-color: #ffffff;
+    }
+    .yxbox32:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    .yxbox33 {
+        height: 120px;
+        width: 364px;
+        background-color: #FFFFFF;
+        margin-top: 126px;
+        margin-right:107px;
+        margin-left:30px;
+        margin-bottom:30px; /* 盒子间距 */
+        float:right;
+        position: relative;
+        overflow: hidden;
+        box-shadow:  0 2px 4px 0 rgba(0,0,0,0.20);
+    }
+    .yxbox33:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox33-img{
+        overflow: hidden;
+        height: 120px;
+        width: 120px;
+        background-color: #ffffff;
+    }
+    .yxbox33:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    .yxbox34 {
+        
+        height: 120px;
+        width: 364px;
+        margin-left:107px;
+        margin-bottom:40px; /* 盒子间距 */
+        float:left;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+        background-color: #FFFFFF;
+        align-items: center;
+        justify-content: center;
+    }
+    .yxbox34:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .yxbox34-img{
+        
+        overflow: hidden;
+        height: 120px;
+        width: 120px;
+        background-color: #ffffff;
+    }
+    .yxbox34:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        transition: transform 0.3s ease; /* 图片变换效果 */
+        
+    }
+    .taller-top {
+        margin-top: 126px;
+        height: 270px;
+        width: 364px;
+        margin-left:107px;
+        margin-bottom:30px; 
+        display:inline-block;
+        overflow: hidden;
+        float: left;
+        background-color: #FFFFFF;
+    }
+    .taller-top ul {
+            list-style: none;
+    }
+
+    .taller-top ul li {
+            float: left;
+            height: 270px;
+            width: 364px;
+            /* 子绝父相 */
+            position: relative;
+    }
+
+    .taller-top ul li img {
+            overflow: hidden;
+            /*width: 560px;
+            height: 270px;*/
+    }
+
+    .taller-top ul li .info {
+        position: absolute;
+        height: 103px;
+        width: 364px;
+        line-height: 103px;
+        color: white;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .5);
+        /* 透明度设置为0，不是背景的透明度，而是整体的透明度 */
+        opacity: 1;
+        font-size: 14px;
+        word-wrap: break-word; /* 自动换行 */
+        padding-left:14px;
+        text-align: left;
+            
+            
+    }
+    .taller-top ul li:hover img{
+        transform: scale(1.1);
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        transition: transform 0.3s ease; /* 图片变换效果 */
+    }
+
+    .taller-bottom {
+        margin-bottom:40px;
+        height: 270px;
+        width: 364px;
+        margin-left:30px;
+        margin-right:107px;
+        float:left;
+        position: relative;
+        box-shadow: none;
+        background: linear-gradient(to bottom, #FF6374, #FF7368);
+    }
+    .taller-bottom:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20); /* 阴影效果 */
+        transition: box-shadow 0.3s ease; /* 添加阴影过渡效果 */
+    }
+    .taller-bottom-img{
+        margin-left: 158px;
+        margin-top: 28px;
+        transition: top 1s linear 0s;
+        top:0px;
+    }
+    .taller-bottom:hover img{
+        top: 10px;
+        overflow: hidden;
+        /*width: 100%; /* 图片宽度填充图片容器 */
+        /*height: 100%; /* 图片高度填充图片容器 */
+        
+    }
+    .taller-bottom-text{
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .yxtext{
+        padding-left: 107px;
+        padding-top: 40px;
+        position: absolute;
+        font-family: PingFangSC-Medium;
+        font-size: 36px;
+        color: #1C1F21;
+        text-align: justify;
+        line-height: 54px;
+        font-weight: bold;
+    }
+    .yxtext2{
+        color:#000000;
+        font-size: 12px;
+        position: absolute;
+        font-weight: bold;
+    }
+    #div{
+        display:inline-block;
+    }
+    .yxtext3{
+        color:#000000;
+        font-size: 14px;
+        position: absolute;
+        padding-left:14px;
+        text-align: left;
+    }
+    .yxtext5{
+        position: absolute; /* 绝对定位 */
+            text-align: left;
+            top:0;
+            line-height: 120px;
+            right: 0; /* 文字在盒子的右上角 */
+            width: 200px; /* 文字容器宽度 */
+            padding: 10px; /* 添加内边距 */
+            font-size: 12px;
+            color: #000000;
+            font-family: 'PingFangSC-Regular';
+            line-height: 1.5; /* 设置行高 */
+            word-wrap: break-word; /* 自动换行 */
+            font-weight:900;
+        
+    }
+    
+    
+    .yxtext6{
+        display:inline-block;
+        color:#000000;
+        font-size: 14px;
+        margin-top: 52px;
+        
+        color: #1C1F21;
+        position:absolute;
+        text-align:justify;
+        font-family: 'PingFangSC-Regular';
+        font-weight: 400;
+    }
+    .yxtext6:hover{
+        color: #20BD9A;
+        border-bottom: 2px solid #20BD9A;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="yxbox">
+        <div class="yxtext" >新鲜甩尾</div>
+        <div class="yxtext2" style="padding-left: 263px;padding-top: 67px;" >每日不可不看的好货</div>
+        <div class="yxbox1">
+           <div class="yxbox1-img"><img src="./慕云游图片/新鲜甩尾-雪乡.png" style="width: 264px;height: 184px;"></div>
+           <div class="yxtext3" style="padding-top: 20px;">北京直飞马尔代夫6-7天往返含税机票</div>
+           <div class="yxtext3" style="padding-top: 42px;">（首都航空/售完为止）…</div>
+        </div>
+        <div class="yxbox12">
+            <div class="yxbox12-img"><img src="./慕云游图片/新鲜甩尾-军舰.png" style="width: 264px;height: 184px;"></div>
+            <div class="yxtext3" style="padding-top: 20px;">[甩尾狂欢] 北京/天津直飞日本东京/大阪/冲绳/札幌/福冈4-7天往返含…</div>
+           <div class="yxtext3" style="padding-top: 42px;"></div>
+         </div>
+         <div class="yxbox12">
+            <div class="yxbox12-img"><img src="./慕云游图片/新鲜甩尾-大船.png" style="width: 264px;height: 184px;"></div>
+            <div class="yxtext3" style="padding-top: 20px;">[拒签全退][全国25城联运] 北京往返格鲁吉亚+阿塞拜疆7-30天自由行…</div>
+           <div class="yxtext3" style="padding-top: 42px;"></div>
+         </div>
+         <div class="yxbox12">
+            <div class="yxbox12-img"><img src="./慕云游图片/新鲜甩尾配图-红衣女子.png" style="width: 264px;height: 184px;"></div>
+            <div class="yxtext3" style="padding-top: 20px;">[樱花季] 北京直飞东京/大阪/名古屋/冲绳/札幌/福冈/仙台2-30天往返</div>
+           <div class="yxtext3" style="padding-top: 42px;"></div>
+         </div>
+         
+         <div class="yxbox13">
+            <div class="yxbox13-img"><img src="./慕云游图片/新鲜甩尾-冰川洞.png" style="width: 264px;height: 184px;"></div>
+            <div class="yxtext3" style="padding-top: 20px;">[品质小团/快速确认] 新西兰福克斯冰川直升机观光+冰川徒步（提供…</div>
+           <div class="yxtext3" style="padding-top: 42px;"></div>
+         </div>
+         <div class="yxbox14">
+            <div class="yxbox14-img"><img src="./慕云游图片/新鲜甩尾-雪山.png" style="width: 264px;height: 184px;"></div>
+            <div class="yxtext3" style="padding-top: 20px;">[北欧破冰船] 芬兰+瑞典极地探险号破冰船活动+冰上漂浮+瑞典小…</div>
+           <div class="yxtext3" style="padding-top: 42px;"></div>
+         </div>
+         <div class="yxbox14">
+            <div class="yxbox14-img"><img src="./慕云游图片/新鲜甩尾-花裙子女人.png"style="width: 264px;height: 184px;" ></div>
+            <div class="yxtext3" style="padding-top: 20px;">[指定班期特惠][全程中文伴游] 摩洛哥全景深度10日游（卡萨进出…</div>
+           <div class="yxtext3" style="padding-top: 42px;"></div>
+         </div>
+         <div class="yxbox14">
+            <div class="yxbox14-img"><img src="./慕云游图片/新鲜甩尾-滑雪.png" style="width: 264px;height: 184px;"></div>
+            <div class="yxtext3" style="padding-top: 20px;">马来西亚天空之镜+河口赏鹰+夜游萤火虫+寻找蓝眼泪（马来西亚瓜拉雪…</div>
+           <div class="yxtext3" style="padding-top: 42px;"></div>
+         </div>
+        
+      
+    </div>
+    <div class="yxboxs">
+            <div class="yxtext" >机酒自由行</div>
+            <div class="yxtext2"style="padding-left: 299px;padding-top: 67px;" >挑选全球机票、酒店、邮轮等旅行产品</div>
+            <div class="yxtext6"style="right: 515px;">近期好货</div>
+            <div class="yxtext6"style="right: 443px;">新品汇聚</div>
+            <div class="yxtext6"style="right: 387px;">定制游</div>
+            <div class="yxtext6"style="right: 317px;">国内推荐</div>    
+            <div class="yxtext6"style="right: 247px;">优惠机票</div>
+            <div class="yxtext6"style="right: 177px;">热门海岛</div>
+            <div class="yxtext6"style="right: 107px;">热卖签证</div>
+            
+            <div class="yxbox2">
+                <ul>
+                    <li>
+                        <img src="./慕云游图片/新鲜甩尾-江南水乡.png" style="width: 560px;height: 270px;">
+                        <div class="info">[樱花季]天津直飞东京/大阪/名古屋/冲绳/札幌2-30天往返含税机票【甩尾/多团期】</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="yxbox21">
+                <div class="yxbox21-img"><img src="./慕云游图片/机酒配图-埃菲尔铁塔.png" style="width: 264px;height: 184px;"></div>
+                <div class="info1">跟团游</div>
+                <div class="yxtext3" style="padding-top: 20px;">北京/上海/南京/杭州直飞巴厘岛5-7天往返含税机票（赠送旅游意外险…</div>
+                <div class="yxtext3" style="padding-top: 42px;"></div>
+             </div>
+             <div class="yxbox22">
+                 <div class="yxbox22-img"><img src="./慕云游图片/机酒配图-水族馆.png" style="width: 264px;height: 184px;"></div>
+                 <div class="info1">机票</div>
+                 <div class="yxtext3" style="padding-top: 20px;">北京/天津直飞日本东京/大阪/东阪/福冈/名古屋冲绳/北海道4-7天往返…</div>
+                 <div class="yxtext3" style="padding-top: 42px;"></div>
+              </div>
+              <div class="yxbox23">
+                 <div class="yxbox23-img"><img src="./慕云游图片/机酒配图-大桥.png" style="width: 264px;height: 184px;"></div>
+                 <div class="info1">机票</div>
+                 <div class="yxtext3" style="padding-top: 20px;">[樱花季] 北京/天津直飞东京/大阪/名古屋/福冈/广岛/北海道/冲绳往返…</div>
+                 <div class="yxtext3" style="padding-top: 42px;"></div>
+              </div>
+              <div class="yxbox24">
+                 <div class="yxbox21-img"><img src="./慕云游图片/机酒配图-金佛.png" style="width: 264px;height: 184px;"></div>
+                 <div class="info1">机票</div>
+                 <div class="yxtext3" style="padding-top: 20px;">杭州/上海/宁波/义乌直飞越南芽庄/岘港4-6天往返含税机票（20KG行…</div>
+                 <div class="yxtext3" style="padding-top: 42px;"></div>
+              </div>
+              
+              <div class="yxbox24">
+                 <div class="yxbox21-img"><img src="./慕云游图片/机酒配图-小孩.png" style="width: 264px;height: 184px;"></div>
+                 <div class="info1">机票</div>
+                 <div class="yxtext3" style="padding-top: 20px;">[赠自由行礼包] 上海/杭州/南京/合肥/宁波/徐州直飞日本东京/大阪…</div>
+                 <div class="yxtext3" style="padding-top: 42px;"></div>
+              </div>
+              <div class="yxbox25">
+                 <p class="yxbox25-text" style="padding-top: 46px;">查看更多</p>
+                 <p class="yxbox25-text" style="top: 46px;">机酒自由行产品</p>
+                 <div class="yxbox25-img"><img src="./慕云游图片/右按钮.png" style="width: 48px;height: 48px;"></div>
+                 <p class="yxbox25-text" style="padding-top: 36px;">机票  |  酒店  |  机+酒  |  邮轮</p>
+
+              </div>
+             
+              
+    </div>
+    <div class="container">
+        <div class="yxtext" >当地玩乐</div>
+            <div class="yxtext2" style="padding-left: 263px;padding-top: 67px;" >像当地人一样，体验本土的吃喝玩乐</div>
+            <div class="yxtext6"style="right: 431px;">国内</div>
+            <div class="yxtext6"style="right: 373px;">日本</div>
+            <div class="yxtext6"style="right: 331px;">瑞士</div>
+            <div class="yxtext6"style="right: 275px;">新西兰</div>    
+            <div class="yxtext6"style="right: 205px;">澳大利亚</div>
+            <div class="yxtext6"style="right: 149px;">柬埔寨</div>
+            <div class="yxtext6"style="right: 107px;">泰国</div>
+            
+        <div class="column">
+          <div class="box taller-top">
+            <ul>
+                <li>
+                    <img src="./慕云游图片/当地玩乐-大象.png" style="width: 364px;height: 270px;">
+                    <div class="info">[亲子佳选]泰国清迈夜间动物园/Night Safari（可选接送；导游；长颈鹿餐厅）</div>
+                </li>
+            </ul>
+        </div>
+          <div class="yxbox34">
+                <div class="yxbox34-img"><img src="./慕云游图片/当地玩乐-熊猫.png" style="width: 120px;height: 120px;"></div>
+                <div class="yxtext5" >
+                    <div>[樱花季] 北京/天津直飞东京/大阪/名古屋/福冈/广岛/北海道/冲绳往返…</div>
+                </div>
+                </div>
+        </div>
+        <div class="column">
+          <div class="yxbox31">
+            <div class="yxbox31-img"><img src="./慕云游图片/当地玩乐-城楼.png" style="width: 120px;height: 120px;"></div>
+            <div class="yxtext5" >
+                <div>[网红新选] 泰国清迈黑白蓝庙一日游清莱黑庙 白庙 蓝庙 温泉驿站中文导游+酒店接送+餐赠小…</div>
+            </div>
+          </div>
+          <div class="yxbox32">
+            <div class="yxbox32-img"><img src="./慕云游图片/当地玩乐喷火.png" style="width: 120px;height: 120px;"></div>
+            <div class="yxtext5" >
+                <div>[全岛接送+中文导游] 泰国普吉岛+皇帝岛+珊瑚岛一日游双体帆船海钓 [帆船晚会+浮潜]…</div>
+            </div>
+          </div>
+          <div class="yxbox32">
+            <div class="yxbox32-img"><img src="./慕云游图片/当地玩乐-兵马俑.png" style="width: 120px;height: 120px;"></div>
+            <div class="yxtext5" >
+                <div>享行之旅|泰国苏梅岛一日游 越野车丛林环岛之旅 骑大象纳蒙瀑布</div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="column">
+          <div class="yxbox33">
+            <div class="yxbox33-img"><img src="./慕云游图片/当地玩乐-黄衣女人.png" style="width: 120px;height: 120px;"></div>
+            <div class="yxtext5" >
+                <div>[可接急单] 泰国普吉岛西蒙Simon人妖秀门票VIP专座近距离与人妖互动合影…</div>
+            </div>
+          </div>
+          <div class="box taller-bottom">
+            <p class="taller-bottom-text" style="padding-top: 46px;">查看更多</p>
+            <p class="taller-bottom-text" style="top: 46px;">当地玩乐产品</p>
+            <div class="taller-bottom-img"><img src="./慕云游图片/右按钮.png" style="width: 48px;height: 48px;"></div>
+            <p class="taller-bottom-text" style="padding-top: 36px;">WiFi/电话卡  |  交通票券  |  景点门票  |  特色体验</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+            
